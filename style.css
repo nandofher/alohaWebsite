@@ -1,39 +1,58 @@
 @font-face {
     font-family: "Raleway Light";
-    src: url("project-01a/assets/fonts/Raleway-Light.ttf");
-   
+    src: url('project-01a/assets/fonts/raleway-light-webfont.eot');
+    src: url('project-01a/assets/fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('project-01a/assets/fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('project-01a/assets/fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('project-01a/assets/fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+        
+
 }
+
 @font-face {
     font-family: "Playfair Display Bold";
-    src: url("project-01a/assets/fonts/PlayfairDisplay-Bold.otf");
+    src: url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.eot");
+    src: url('project-01a/assets/fonts/playfairdisplaysc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.svg") format('svg');
+          font-style:none;
+          font-weight:bold;
+
 }
 @font-face {
     font-family: "Playfair Display Italic";
-    src: url("project-01a/assets/fonts/PlayfairDisplay-Italic.otf");
+    src: url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.eot");
+    src: url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.eot?#iefix") format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.svg") format('svg');
+          font-style:italic;
+          font-weight:normal;
+
 }
 @font-face {
     font-family: "Playfair Display Regular";
-    src: url("project-01a/assets/fonts/PlayfairDisplay-Regular.otf");
+    src: url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.eot");
+    src: url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.svg")  format('svg');
+         font-style:normal;
+         font-weight:normal;
+
 }
+
+
+
 
 
 body, html {
-    font-size: 12px;
+    font-size: 16px;
     font-family:"Raleway Light";
     
-
-}
-
-h1 {
-    font-family:"Playfair Display Bold";
-    font-size:35px;
-    padding-bottom: 2%;
-    
-}
-
-.heavy {
-    font-size: 35px;
-    font-family:"Playfair Display Italic";
 
 }
 
@@ -41,7 +60,9 @@ h1 {
     max-width:480;
     width: 100%;
     margin:0 auto;
+    overflow:hidden;
 }
+/* header-------------------------------------------*/
 
 header {
     background-color: white;
@@ -62,11 +83,16 @@ header {
 .logo {
     float:left;
     clear:right;
-    width: 100px;
+    width: 120px;
     height: auto;
     margin: 1%;
     padding-left: 15px;
 }
+
+/* hero banner----------------------------------------*/
+
+
+    
 
 
 .heroBanner {
@@ -86,25 +112,29 @@ header {
    width: 100%;
    position:absolute;
    transform: translate(0%,-50%);
-   
-    
 
 }
+
 .spring {
  
-    font-size: 80px;
-    color: white;  
+    font-size: 70px;
+    color: white; 
     text-align: center;
     font-family:"Playfair Display Regular";
+    text-shadow: 1px 1px 2px black;
     
 }
+
 
 .smalltxt {
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     color: white;
     text-align: center;
+    font-style: bold;
 }
+
+/* first section ---------------------------------------*/
 
 .handcraft {
     text-align: center;
@@ -116,11 +146,32 @@ header {
     line-height: 30px;
 }
 
+h1 {
+    font-family:"Playfair Display Regular";
+    font-size:35px;
+    padding-bottom: 2%;
+    font-weight: bold;
+    
+}
+
+.heavy {
+    font-size: 35px;
+    font-family:"Playfair Display Italic";
+    font-style:italic;
+    font-weight:normal;
+}
+
+ .firstpara {
+    font-size: 14px;
+    font-family:"Raleway Light";
+}  
 
 img {
     max-width: 100%;
 
 }
+
+/* Second section list items----------------------------------*/
 
 .mostLoved {
     text-align:center;
@@ -158,6 +209,8 @@ img {
     text-align:center;
     margin-bottom: 10px;
 }
+
+/*------------------------signup -----------------------------*/
   
 .signup {
     background-image: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
@@ -182,7 +235,7 @@ img {
 .signupblock {
     top: 50%;
    width: 100%;
-   position:relative;
+   position:absolute;
    transform: translate(0%,-50%);
    color: white;
    font-size: 16px;
@@ -192,30 +245,59 @@ img {
 }
 
 .emailform {
-    display:inline-block;
-    position:relative;
+    background: white;
+    width: 475px;
+    margin: 0 auto;
+    height: 45px;
+    border-radius: 50px;
+    position: relative;
 }
 
-textarea {
+input {
     border-radius: 30px;
+    margin-left: 120px;
     height: 30px;
     border: none;
     resize: none;
+    padding-right: 90px;
+    font-family: "Raleway Light";
+    font-size: 14px;
+    padding-top: 12px;
+    width: 350px;
+    color: #969696;
+    left: 400px;
 
 
+} 
+
+.txt {
+    
+    border-radius: 30px;
+    height: 20px;
+    border: none;
+    resize: none;
+    font-family: "Raleway Light";
+    margin: 0 auto;
+    color: #969696;
+   
 }
 
 button{
- position:absolute;
-    bottom: 13px;
-    right: 460px;
+
+    position: absolute;
+    bottom: 3px;
+    font-size: 14px;
+    font-family: "Raleway Light";
     color: white;
     border-radius: 50px;
-    height: 29px;
+    height: 40px;
     border: 0;
-    width: 80px;
+    width: 120px;
+    right: 3px;
     background-color: #e2574c;
 }
+
+/*------------------footer-----------------------*/
 
 footer {
     background-color: #242424;
@@ -235,6 +317,11 @@ footer {
 
 }
 
+.emailad {
+    text-decoration: underline;
+    color:white;
+}
+
 .street {
     color:#969696;
 }
@@ -244,10 +331,11 @@ footer {
 .social {
     float: right;
     padding-right: 80px;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 250%;
     padding-top: 50px;
     color: white;
+
 
 }
   
@@ -262,156 +350,5 @@ footer {
 
 
     }
+
     
-
-/* 
-body, html {
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.container {
-    max-width:1240;
-    width: 100%;
-    margin:0 auto;
-}
-
-header {
-    background-color: white;
-    margin: 0 1.5%;
-    width: 15%;
-    position: inline-block;
-    
-}
-
-.cart {
-    float:right;
-    height: auto;
-    width: 50px;
-    margin: 1%;
-}
-
-.logo {
-    float:left;
-    clear:right;
-    width: 100px;
-    height: auto;
-    margin: 1%;
-}
-
-
-.heroBanner {
-    background: linear-gradien(to bottom, rgba(0,0,0,0.25) rgba(0,0,0,0.25) 100%)
-                url(project-01a/assets/images/banner-girl.png) no-repeat center center, 
-                url(project-01a/assets/images/flower-bkgd.jpg);             
-    background-size: contain, contain;
-    background-position-y: 0px, 80px;
-    height: 550px; 
-    position: relative;
-    clear:both; 
-      
-}
-
-.heroBanner div {
-   top: 50%;
-   width: 100%;
-   position:absolute;
-   transform: translate(0%,-50%);
-    
-
-}
-.spring {
- 
-    font-size: 80px;
-    color: white;  
-    text-align: center;
-    
-}
-
-.smalltxt {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-}
-
-.handcraft {
-    text-align: center;
-}
-
-
-img {
-    max-width: 100%;
-
-}
-
-.mostLoved {
-    text-align:center;
-
-}
-
-.ctypes {
-    text-transform: uppercase;
-}
-
-.listitems div {
-    float:left;
-    width:25%;
-    text-align:center;
-}
-  
-  
-.signup {
-    background-image: url(project-01a/assets/images/wave-bkgd.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    clear: left;
-    height: 300px;
-    width: 100%;
-    background-position-y: -400px;
-
-}
-
-.signup p {
-  padding-top: 250px;
-  text-align:center;
-  color:white;
-  
-
-}
-
-.signupblock {
-    top: -9%;
-   width: 100%;
-   position:absolute;
-   transform: translate(0%,-50%);
-}
-
-footer {
-    background-color: black;
-    color: white;
-    height:300px;
-
-}
-
-.address {
-    float: left;
-
-}
-
-.social {
-  float: right;
-}
-  
-.social a {
-    text-decoration: none;
-
-}
-
-.social a:hover {
-    color: red;
-
-
-}
-*/
