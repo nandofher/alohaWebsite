@@ -13,41 +13,37 @@
 
 @font-face {
     font-family: "Playfair Display Bold";
-    src: url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.eot");
-    src: url('project-01a/assets/fonts/playfairdisplaysc-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.woff2") format('woff2'),
-         url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.ttf") format('truetype'),
-         url("project-01a/assets/fonts/playfairdisplaysc-bold-webfont.svg") format('svg');
+    src: url("project-01a/assets/fonts/playfairdisplay-bold-webfont.eot");
+    src: url('project-01a/assets/fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.svg") format('svg');
           font-style:none;
           font-weight:bold;
 
 }
 @font-face {
     font-family: "Playfair Display Italic";
-    src: url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.eot");
-    src: url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.eot?#iefix") format('embedded-opentype'),
-         url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.woff2") format('woff2'),
-         url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.ttf") format('truetype'),
-         url("project-01a/assets/fonts/playfairdisplaysc-italic-webfont.svg") format('svg');
+    src: url("project-01a/assets/fonts/playfairdisplay-italic-webfont.eot");
+    src: url("project-01a/assets/fonts/playfairdisplay-italic-webfont.eot?#iefix") format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.svg") format('svg');
           font-style:italic;
           font-weight:normal;
 
 }
 @font-face {
     font-family: "Playfair Display Regular";
-    src: url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.eot");
-    src: url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.eot?#iefix") format('embedded-opentype'),
-         url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.woff2") format('woff2'),
-         url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.ttf") format('truetype'),
-         url("project-01a/assets/fonts/playfairdisplaysc-regular-webfont.svg")  format('svg');
+    src: url("project-01a/assets/fonts/playfairdisplay-regular-webfont.eot");
+    src: url("project-01a/assets/fonts/playfairdisplay-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.svg")  format('svg');
          font-style:normal;
          font-weight:normal;
 
 }
-
-
-
-
 
 body, html {
     font-size: 16px;
@@ -57,10 +53,14 @@ body, html {
 }
 
 .container {
-    max-width:480;
+    /*max-width:480;*/
     width: 100%;
     margin:0 auto;
-    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex: 0 200 200%;
+
 }
 /* header-------------------------------------------*/
 
@@ -68,26 +68,86 @@ header {
     background-color: white;
     margin: 0 1.5%;
     width: 15%;
-    position: inline-block;
+    display:flex;
+    max-width: 1240px;
+    flex-wrap: wrap;
+   
+}
+
+.navmenu {
+    display:flex;
+    flex: auto;
+    justify-content:space-between;
+    max-width: 30rem;
+    padding-bottom:10px;
+     border-top: 1px solid #d7d7d7;
+     flex:1 1 50%;
     
 }
 
+.navmenu p {
+    width:100%; 
+	text-align:center; 
+    justify-content: center;
+	align-self: center;  
+	margin:0;
+    text-transform: uppercase;
+    color:#e2574c;
+    font-family: "Raleway Light" ;
+    text-decoration:none;
+    
+    }
+
+.aboutnav {
+    display: inherit;
+   
+}
+
+.shopnav {
+    display: inherit;
+
+}
+
+.featurednav {
+    display:inherit;
+
+}
+
+.updatesnav {
+    display:inherit;
+
+}
+
 .cart {
-    float:right;
+  
     height: auto;
-    width: 50px;
+    max-width: 345px;
     margin: 1%;
-    padding-right:15px;
+    padding-left: 300px;
+    align-self: flex-end;
+
 }
 
 .logo {
-    float:left;
-    clear:right;
-    width: 120px;
+    
+  
+    max-width: 100px;
     height: auto;
     margin: 1%;
-    padding-left: 15px;
+    flex: 1 1 50%;
+    align-self: flex-start;
 }
+
+
+.space {
+    display:flex;
+    justify-content: space-between;
+    max-width: 18rem;
+    width:100%;
+}
+
+
+
 
 /* hero banner----------------------------------------*/
 
@@ -99,11 +159,10 @@ header {
     background: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
                 url(project-01a/assets/images/banner-girl.png) no-repeat center center, 
                 url(project-01a/assets/images/flower-bkgd.jpg);             
-    background-size: contain, contain, contain;
+    background-size: contain, contain, cover;
     background-position-y: 0px, 80px, 0px;
     height: 550px; 
     position: relative;
-    clear:both; 
       
 }
 
@@ -117,7 +176,7 @@ header {
 
 .spring {
  
-    font-size: 70px;
+    font-size: 3rem;
     color: white; 
     text-align: center;
     font-family:"Playfair Display Regular";
@@ -144,6 +203,8 @@ header {
     margin-top: 60px;
     font-size: 16px;
     line-height: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -151,7 +212,8 @@ h1 {
     font-size:35px;
     padding-bottom: 2%;
     font-weight: bold;
-    
+    margin: 0 auto;
+    text-align:center;
 }
 
 .heavy {
@@ -171,12 +233,121 @@ img {
 
 }
 
+/* Box items ---------------------------------------------*/
+.boxitems{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.catagories {
+
+	display: flex;
+    flex-wrap: wrap;
+    min-height: 900px;
+    margin-bottom: 10rem;
+
+}
+.mens { 
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
+                 url(project-01b/images/mens-category.jpg) no-repeat center center;
+    background-size: cover, cover;
+     max-width: 100%;
+     flex: 2 0 100%;
+     border: 5px solid white;
+    margin:2px;
+    display: inherit;
+}
+.trends {
+     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
+                        url(project-01b/images/trends-category.jpg)no-repeat center center;
+     background-size: cover, cover;
+     border: 5px solid white;
+     max-width:50%;
+     flex: 1 0 50%;
+    display: inherit;
+} 
+
+.glasses {
+
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
+                        url(project-01b/images/glasses-category.jpg)no-repeat center center;
+     background-size: cover, cover;
+     border: 5px solid white;
+     max-width:50%;
+     flex: 1 0 50%;
+    display: inherit;
+   /* background: url(project-01b/images/glasses-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 298px;
+    height:50%;
+     margin: 2px;
+    display: inherit; */
+
+    }
+.sale {
+      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
+                        url(project-01b/images/sale-category.jpg)no-repeat center center;
+     background-size: cover, cover;
+     border: 5px solid white;
+     max-width:50%;
+     flex: 1 0 50%;
+     display: inherit;
+}
+
+.bags {
+     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
+                        url(project-01b/images/bags-category.jpg)no-repeat center center;
+     background-size: cover, cover;
+     border: 5px solid white;
+     max-width:50%;
+     flex: 1 0 50%;
+     display: inherit;
+}
+
+.womens {
+     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
+                 url(project-01b/images/womens-category.jpg) no-repeat center center;
+    background-size: cover, cover;
+    border: 5px solid white;
+     max-width: 100%;
+     flex: 2 0 100%;
+    margin:2px;
+    display: inherit;
+     /* background-size: cover;
+     background-repeat: no-repeat;
+    width: 600px;
+    height:50%;
+    margin: 2px;
+    display: inherit; */
+}
+
+ .catagories p {
+    width:100%; 
+	text-align:center; 
+    justify-content: center;
+    font-size:2rem;
+	align-self: center;  
+	margin:0;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Raleway Light" ;
+    text-shadow: 1px 1px 2px black;
+    
+    }
+
+
+
+
 /* Second section list items----------------------------------*/
-
+.main-carousel {
+width:1000px;
+text-align:center;
+}
 .mostLoved {
-    text-align:center;
-    font-size: 16px;
-
+ 
+    height: 400px;
+    margin-bottom:10rem;
 }
 
 .ctypes {
@@ -204,9 +375,9 @@ img {
 }
 
 .listitems div {
-    float:left;
-    width:25%;
-    text-align:center;
+    
+    width:100%;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -215,8 +386,8 @@ img {
 .signup {
     background-image: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
     url(project-01a/assets/images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
     position: relative;
-    clear: left;
     height: 325px;
     width: 100%;
     background-position-y:0, -540px;
@@ -227,8 +398,6 @@ img {
 .signup p {
   padding-top: 30px;
   text-align:center;
-   
-  
 
 }
 
@@ -242,6 +411,10 @@ img {
    text-align:center;
    line-height: 30px;
    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .emailform {
@@ -251,6 +424,7 @@ img {
     height: 45px;
     border-radius: 50px;
     position: relative;
+    max-width:400px;
 }
 
 input {
@@ -273,7 +447,7 @@ input {
 .txt {
     
     border-radius: 30px;
-    height: 20px;
+    height: 30px;
     border: none;
     resize: none;
     font-family: "Raleway Light";
@@ -301,15 +475,18 @@ button{
 
 footer {
     background-color: #242424;
-    height:300px;
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align:center;
 
 
 }
 
+
 .address {
     color: white;
-    float: left;
-    padding-left: 30px;
     font-size: 16px;
     line-height: 1.5;
     padding-top: 50px;
@@ -329,20 +506,23 @@ footer {
 
 
 .social {
-    float: right;
-    padding-right: 80px;
+    width: 100%;
     font-size: 14px;
     line-height: 250%;
-    padding-top: 50px;
+    padding-top: 10px;
     color: white;
 
 
+}
+
+h3 {
+    display:none;
 }
   
 .social a {
     text-decoration: none;
     color: white;
-
+    margin:.5rem;
 }
 
 .social a:hover {

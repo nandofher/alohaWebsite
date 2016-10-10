@@ -1,0 +1,336 @@
+@media screen and (min-width: 600px) {
+    body {
+    background-color: white; 
+  
+
+    }
+
+    .container {
+        flex-wrap:nowrap;
+    }
+
+ .cart {
+     padding-left:20px;
+     order: 1;
+     height:3rem;
+     align-self:center;
+ }
+
+ .logo {
+     align-self:center;
+ }
+
+ .navmenu{
+     border:none;
+     align-items:center;
+     padding:1rem;
+     max-width:21rem;
+ }
+ 
+
+/*---------------box items--------------------------------*/
+
+.boxitems{
+    display:initial;
+}
+.catagories {
+
+	display: flex;
+    flex-flow: row wrap;
+    min-height:500px;
+    margin-bottom: 10rem;
+
+}
+
+.mens {
+    flex-basis:47%;
+}
+
+.trends {
+    flex-basis: 24%;
+
+}
+
+.glasses {
+    flex-basis:24%
+}
+
+.sale {
+    flex-basis:24%
+}
+
+.bags {
+    flex-basis:25%;
+
+}
+
+.womens {
+
+    flex-basis: 50%;
+}
+/*
+.mens { 
+     background-image: url(project-01b/images/mens-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+    width: 49%;
+    height:100%;
+    margin:2px;
+    display: inherit;
+}
+.trends {
+     background-image: url(project-01b/images/trends-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+    width: 24%;
+    height:100%;
+    margin:2px;
+    display: inherit;
+} 
+
+.glasses {
+    background-image: url(project-01b/images/glasses-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 24%;
+     height:100%;
+     margin: 2px;
+    display: inherit;
+
+    }
+.sale {
+    background-image: url(project-01b/images/sale-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 24%;
+     height:100%;
+     margin: 2px;
+       display:inherit;
+}
+
+.bags {
+    background-image: url(project-01b/images/bags-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;  
+    width: 24.5%;
+    height:100%;
+    margin: 2px;
+    display: inherit;
+}
+
+.womens {
+     background-image: url(project-01b/images/womens-category.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+    width: 48.5%;
+    height:100%;
+    margin: 2px;
+    display: inherit;
+}
+*/
+ .catagories p {
+    font-size: 3rem;
+
+    }
+/*------------------------list items----------------------*/
+.listitems {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 182%;
+}
+
+.listitems div {
+    width: 55%;
+}
+
+.carousel_cell{
+    width:100%;
+    left:50%;
+    position:relative;
+    justify-content: space-between;
+}
+
+.flickity-slider {
+    width:100%;
+}
+
+.flickity-viewport {
+    max-width:1240px;
+}
+/*----------------------sign up form------------------------------------*/
+
+.txt{
+    height: 30px;
+}
+
+h3 {
+    display:inline;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: 'Raleway Light';
+    margin-right: 6rem;
+}
+
+.address {
+
+    text-align:left;
+    margin-left:6rem;
+}
+
+/*------------------------------------------------------------------*/
+@media screen and (min-width: 1240px) {
+   body {
+      background-color: white;
+   }
+/*
+      @font-face {
+    font-family: "Raleway Light";
+    src: url('project-01a/assets/fonts/raleway-light-webfont.eot');
+    src: url('project-01a/assets/fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('project-01a/assets/fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('project-01a/assets/fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('project-01a/assets/fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+        
+
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("project-01a/assets/fonts/playfairdisplay-bold-webfont.eot");
+    src: url('project-01a/assets/fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.svg") format('svg');
+          font-style:none;
+          font-weight:bold;
+
+}
+@font-face {
+    font-family: "Playfair Display Italic";
+    src: url("project-01a/assets/fonts/playfairdisplay-italic-webfont.eot");
+    src: url("project-01a/assets/fonts/playfairdisplay-italic-webfont.eot?#iefix") format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.svg") format('svg');
+          font-style:italic;
+          font-weight:normal;
+
+}
+@font-face {
+    font-family: "Playfair Display Regular";
+    src: url("project-01a/assets/fonts/playfairdisplay-regular-webfont.eot");
+    src: url("project-01a/assets/fonts/playfairdisplay-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.woff2") format('woff2'),
+         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.ttf") format('truetype'),
+         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.svg")  format('svg');
+         font-style:normal;
+         font-weight:normal;
+
+}
+
+body, html {
+    font-size: 16px;
+    font-family:"Raleway Light";
+    */
+
+    
+
+}
+
+.container {
+    /*max-width:480;*/
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+    flex: 0 200 200%;
+
+}
+/* header-------------------------------------------*/
+
+header {
+    background-color: white;
+    margin: 0 1.5%;
+    width: 15%;
+    display:flex;
+    max-width: 1280px;
+    flex-wrap: nowrap;
+   
+}
+
+.navmenu {
+    display:flex;
+    flex: auto;
+    justify-content:space-between;
+    max-width: 18rem;
+    
+}
+
+.navmenu p {
+    width:100%; 
+	text-align:center; 
+    justify-content: center;
+	align-self: center;  
+	margin:0;
+    text-transform: uppercase;
+    color:#e2574c;
+    font-family: "Raleway Light" ;
+    text-decoration:none;
+    }
+
+.aboutnav {
+    display: inherit;
+   
+}
+
+.shopnav {
+    display: inherit;
+
+}
+
+.featurednav {
+    display:inherit;
+
+}
+
+.updatesnav {
+    display:inherit;
+
+}
+
+.cart {
+  
+    height: auto;
+    width: 85px;
+    margin: 1%;
+    padding-right:15px;
+   
+    flex: 0 0 50px;
+}
+
+.logo {
+    
+   
+    width: 120px;
+    
+    margin: 1%;
+    padding-left: 15px;
+ 
+}
+
+/* hero banner----------------------------------------*/
+
+
+    
+
+   }
+
+}

@@ -3,17 +3,33 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css" media="all and (min-width: 600px)">
+        <link rel="stylesheet" href="flickity-docs.css" media="screen">
+    
+
         <title>Aloha Website</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
         <body> 
            
                 <header class="container">
+                 
                         <img class="logo" src="project-01a/assets/images/aloha-logo.svg">
-                        
+                          
                         <img class="cart" src="project-01a/assets/images/cart-icon.svg">
+                
+                        <div class="navmenu">
+                            <ul class="navmenu">
+                               <li class="aboutnav"><a href="#about"><p>about</p></a></li>
+                                <li class="shopnav"><a href="#shop"><p>shop</p></a></li>
+                                <li class="featurednav"><a href="#featured"><p>featured</p></a></li>
+                                <li class="updatesnav"><a href="#updates"><p>updates</p></a></li>
+                            </ul>
+                       </div>
+             
                 </header>
 
                 <section class="heroBanner">
@@ -23,54 +39,95 @@
                     </div>
                 </section>
 
-                <section class="handcraft">
+                <section id="about" class="handcraft">
                     <div>
                        <h1><span class="heavy">Hand-Crafted</span> Styles</h1>
                         <p class="firstpara">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br> current selection of products or sign-up for updates below.</p>
                     </div>
                 </section>
+                <section id="shop" class="boxitems">
+                    <div class="catagories">
+                        <div class="mens"><p>men's</p></div>
+                        <div class="trends"><p>trends</p></div>
+                        <div class="glasses"><p>glasses</p></div>
+                        <div class="sale"><p>sale</p></div>
+                        <div class="bags"><p>bags</p></div>
+                        <div class="womens"><p>women's</p></div>
+                    </div>
+                </section>
 
-                <section class="mostLoved">
-                    <div class="container">
+                <section id="featured" class="mostLoved">
+                 
                        <h1><span class="heavy">Most-Loved</span> Products</h1>
                     
                     <div class="listitems">
                         
-                        <div>
+                        
+                        <div class="carousel" data-flickity>
+ 
+                            <div class="carousel_cell">
                                 <img src="project-01a/assets/images/stretch-knit-dress.jpg" >
                                 <p class="ctypes">DRESSES</p>
                                 <p class="cnames">Stretch Knit Dress</p>
                                 <p class="cprice">$169.00</p>
                             </div>
-                            <div>
+                            <div class="carousel_cell">
                                 <img src="project-01a/assets/images/cotton-blue-shirt.jpg" >
                                 <p class="ctypes">SHIRTS</p>
                                 <p class="cnames"> Cotton Blue Shirt</p>
                                 <p class="cprice">$89.00</p>
                             </div>
-                            <div>
+                            <div class="carousel_cell">
                                 <img src="project-01a/assets/images/checked-stretch-dress.jpg" >
                                 <p class="ctypes">DRESSES</p>
                                 <p class="cnames"> Checkered Stretch Dress</p>
                                 <p class="cprice">$129.00</p>
                             </div>
-                            <div>
+                            <div class="carousel_cell">
                                 <img src="project-01a/assets/images/blue-hipster-backpack.jpg" >
                                 <p class="ctypes">BAGS</p>
                                 <p class="cnames"> Blue Hipster Backpack</p>
                                 <p class="cprice">$69.00</p>
                             
                             </div>
+                             <div class="carousel_cell">
+                                <img src="project-01b/images/blue-silk-dress.jpg" >
+                                <p class="ctypes">dresses</p>
+                                <p class="cnames"> Blue Silk Dress</p>
+                                <p class="cprice">$89.00</p>
+                            
+                            </div>
+                             <div class="carousel_cell">
+                                <img src="project-01b/images/cotton-yellow-tshirt.jpg" >
+                                <p class="ctypes">t-shirts</p>
+                                <p class="cnames"> Cotton Yellow T-shirt</p>
+                                <p class="cprice">$69.00</p>
+                            
+                            </div>
+                             <div class="carousel_cell">
+                                <img src="project-01b/images/pink-dotted-dress.jpg" >
+                                <p class="ctypes">Dresses</p>
+                                <p class="cnames"> Pink Dotted Dress</p>
+                                <p class="cprice">$99.00</p>
+                            
+                            </div>
+                             <div class="carousel_cell">
+                                <img src="project-01b/images/demin-overall-shorts.jpg" >
+                                <p class="ctypes">Demin</p>
+                                <p class="cnames"> Demin Overall Shorts</p>
+                                <p class="cprice">$89.00</p>
+                             </div>
+                       
                         </div>
             </section>
 
-            <section class="signup">  
+            <section id="updates" class="signup">  
                <div class="signupblock">
                         <h1><span class="heavy">Sign-up for</span> Updates</h1>
                     
                              Stay updated on out latest product releases, be the first to find out about upcomming<br> sales,and get free style tips from our blog. Unsubscribe at any time.</p>
                         <div class="emailform">
-                        <input name="email" class="txt" value="Your Email"></input>
+                        <input name="email" class="txt" value="Your Email">
                         <button>Subscribe</button>
                     </div>
               </div>
@@ -90,19 +147,23 @@
                         Vancouver, BC, Canada</p>
                         
                     </div>
+               
                     <div class="social">
-                        
-                        <ul>
-                    <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>  Facebook</li></a>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter </li></a>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>  Instagram </li></a>
-                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i>  Pintrest</li></a>
-                    <li> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>  Google </li></a>
-                    </ul>
-                     
-                </div>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><h3> Facebook </h3>  </a>
+                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> <h3> Twitter</h3> </a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><h3> Instagram</h3> </a>
+                   <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><h3> Pintrest</h3></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><h3> Google</h3> </a>
+                    </div>
+              </div>
             </footer>
-       
+            
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/flickity-docs.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/smoothScroll.js"></script>
+
     </body>
 </html>
 
