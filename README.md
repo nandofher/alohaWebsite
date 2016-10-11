@@ -6,13 +6,13 @@
 
 ## What I learned
 
-HTML*
-CSS
-GIT & The Command line
-Responsive Web Design
-HTML forms
-Specificity
-Javascript
-Flexbox
-jQuery + Plugins
+-HTML
+-CSS
+-GIT & The Command line
+-Responsive Web Design
+-HTML forms
+-Specificity
+-Javascript
+-Flexbox
+-jQuery + Plugins
 
