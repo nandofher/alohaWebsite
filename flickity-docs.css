@@ -435,6 +435,7 @@ http://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 100%;
+  width:100%;
 }
 
 .flickity-slider {
@@ -1201,7 +1202,7 @@ code .flickity { text-decoration: underline; }
 ------------------------- */
 
 .carousel {
-  background: #FAFAFA;
+  background: white;
   margin-bottom: 30px;
   counter-reset: carousel-cell;
 }
@@ -1482,7 +1483,7 @@ two columns for large devices
 
 .hero-carousel {
   margin-bottom: 80px;
-  background: #FAFAFA url('http://i.imgur.com/R60qKwS.jpg');
+  background:white url('http://i.imgur.com/R60qKwS.jpg');
   background-size: cover;
 }
 

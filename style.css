@@ -1,45 +1,44 @@
 @font-face {
     font-family: "Raleway Light";
-    src: url('project-01a/assets/fonts/raleway-light-webfont.eot');
-    src: url('project-01a/assets/fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('project-01a/assets/fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('project-01a/assets/fonts/raleway-light-webfont.ttf') format('truetype'),
-         url('project-01a/assets/fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    src: url('fonts/raleway-light-webfont.eot');
+    src: url('fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-light-webfont.woff2') format('woff2'), 
+         url('fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
     font-weight: normal;
-    font-style: normal;
-        
-
+    font-style: normal;        
 }
+
 
 @font-face {
-    font-family: "Playfair Display Bold";
-    src: url("project-01a/assets/fonts/playfairdisplay-bold-webfont.eot");
-    src: url('project-01a/assets/fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.woff2") format('woff2'),
-         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.ttf") format('truetype'),
-         url("project-01a/assets/fonts/playfairdisplay-bold-webfont.svg") format('svg');
-          font-style:none;
-          font-weight:bold;
-
+    font-family: "Raleway Medium";
+    src: url('fonts/raleway-medium-webfont.eot');
+    src: url('fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('fonts/raleway-medium-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;        
 }
+
 @font-face {
     font-family: "Playfair Display Italic";
-    src: url("project-01a/assets/fonts/playfairdisplay-italic-webfont.eot");
-    src: url("project-01a/assets/fonts/playfairdisplay-italic-webfont.eot?#iefix") format('embedded-opentype'),
-         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.woff2") format('woff2'),
-         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.ttf") format('truetype'),
-         url("project-01a/assets/fonts/playfairdisplay-italic-webfont.svg") format('svg');
+    src: url("fonts/playfairdisplay-italic-webfont.eot");
+    src: url("fonts/playfairdisplay-italic-webfont.eot?#iefix") format('embedded-opentype'),
+         url("fonts/playfairdisplay-italic-webfont.woff2") format('woff2'),
+         url("fonts/playfairdisplay-italic-webfont.ttf") format('truetype'),
+         url("fonts/playfairdisplay-italic-webfont.svg") format('svg');
           font-style:italic;
           font-weight:normal;
 
 }
 @font-face {
     font-family: "Playfair Display Regular";
-    src: url("project-01a/assets/fonts/playfairdisplay-regular-webfont.eot");
-    src: url("project-01a/assets/fonts/playfairdisplay-regular-webfont.eot?#iefix") format('embedded-opentype'),
-         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.woff2") format('woff2'),
-         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.ttf") format('truetype'),
-         url("project-01a/assets/fonts/playfairdisplay-regular-webfont.svg")  format('svg');
+    src: url("fonts/playfairdisplay-regular-webfont.eot");
+    src: url("fonts/playfairdisplay-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("fonts/playfairdisplay-regular-webfont.woff2") format('woff2'),
+         url("fonts/playfairdisplay-regular-webfont.ttf") format('truetype'),
+         url("fonts/playfairdisplay-regular-webfont.svg")  format('svg');
          font-style:normal;
          font-weight:normal;
 
@@ -47,7 +46,7 @@
 
 body, html {
     font-size: 16px;
-    font-family:"Raleway Light";
+    font-family:"Raleway Light", "Garamond";
     
 
 }
@@ -58,7 +57,7 @@ body, html {
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-between;
     flex: 0 200 200%;
 
 }
@@ -82,6 +81,9 @@ header {
     padding-bottom:10px;
      border-top: 1px solid #d7d7d7;
      flex:1 1 50%;
+     font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
     
 }
 
@@ -93,8 +95,10 @@ header {
 	margin:0;
     text-transform: uppercase;
     color:#e2574c;
-    font-family: "Raleway Light" ;
-    text-decoration:none;
+    font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
     
     }
 
@@ -121,21 +125,18 @@ header {
 .cart {
   
     height: auto;
-    max-width: 345px;
-    margin: 1%;
-    padding-left: 300px;
-    align-self: flex-end;
+    max-width: 16%;
+    margin: 10%;
+    flex: 0 1 50%;
 
 }
 
 .logo {
     
-  
-    max-width: 100px;
+    max-width: 120px;
     height: auto;
     margin: 1%;
-    flex: 1 1 50%;
-    align-self: flex-start;
+    flex: 0 1 50%;
 }
 
 
@@ -157,10 +158,10 @@ header {
 
 .heroBanner {
     background: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
-                url(project-01a/assets/images/banner-girl.png) no-repeat center center, 
-                url(project-01a/assets/images/flower-bkgd.jpg);             
+                url(banner-girl.png) no-repeat center center, 
+                url(flower-bkgd.jpg);             
     background-size: contain, contain, cover;
-    background-position-y: 0px, 80px, 0px;
+    
     height: 550px; 
     position: relative;
       
@@ -179,7 +180,7 @@ header {
     font-size: 3rem;
     color: white; 
     text-align: center;
-    font-family:"Playfair Display Regular";
+    font-family:"Playfair Display Regular", "Garamond";
     text-shadow: 1px 1px 2px black;
     
 }
@@ -190,7 +191,10 @@ header {
     text-transform: uppercase; 
     color: white;
     text-align: center;
-    font-style: bold;
+    text-shadow: 1px 1px 2px black;
+    font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* first section ---------------------------------------*/
@@ -208,7 +212,7 @@ header {
 }
 
 h1 {
-    font-family:"Playfair Display Regular";
+    font-family:"Playfair Display Regular", "Garamond";
     font-size:35px;
     padding-bottom: 2%;
     font-weight: bold;
@@ -218,14 +222,14 @@ h1 {
 
 .heavy {
     font-size: 35px;
-    font-family:"Playfair Display Italic";
+    font-family:"Playfair Display Italic", "Garamond";
     font-style:italic;
     font-weight:normal;
 }
 
  .firstpara {
     font-size: 14px;
-    font-family:"Raleway Light";
+    font-family:"Raleway Light", "Garamond";
 }  
 
 img {
@@ -244,12 +248,12 @@ img {
 	display: flex;
     flex-wrap: wrap;
     min-height: 900px;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
 
 }
 .mens { 
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                 url(project-01b/images/mens-category.jpg) no-repeat center center;
+                 url(mens-category.jpg) no-repeat center center;
     background-size: cover, cover;
      max-width: 100%;
      flex: 2 0 100%;
@@ -259,7 +263,7 @@ img {
 }
 .trends {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(project-01b/images/trends-category.jpg)no-repeat center center;
+                        url(trends-category.jpg)no-repeat center center;
      background-size: cover, cover;
      border: 5px solid white;
      max-width:50%;
@@ -270,24 +274,18 @@ img {
 .glasses {
 
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(project-01b/images/glasses-category.jpg)no-repeat center center;
+                        url(glasses-category.jpg)no-repeat center center;
      background-size: cover, cover;
      border: 5px solid white;
      max-width:50%;
      flex: 1 0 50%;
     display: inherit;
-   /* background: url(project-01b/images/glasses-category.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     width: 298px;
-    height:50%;
-     margin: 2px;
-    display: inherit; */
+
 
     }
 .sale {
       background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(project-01b/images/sale-category.jpg)no-repeat center center;
+                        url(sale-category.jpg)no-repeat center center;
      background-size: cover, cover;
      border: 5px solid white;
      max-width:50%;
@@ -297,7 +295,7 @@ img {
 
 .bags {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(project-01b/images/bags-category.jpg)no-repeat center center;
+                        url(bags-category.jpg)no-repeat center center;
      background-size: cover, cover;
      border: 5px solid white;
      max-width:50%;
@@ -307,19 +305,14 @@ img {
 
 .womens {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                 url(project-01b/images/womens-category.jpg) no-repeat center center;
+                 url(womens-category.jpg) no-repeat center center;
     background-size: cover, cover;
     border: 5px solid white;
      max-width: 100%;
      flex: 2 0 100%;
     margin:2px;
     display: inherit;
-     /* background-size: cover;
-     background-repeat: no-repeat;
-    width: 600px;
-    height:50%;
-    margin: 2px;
-    display: inherit; */
+ 
 }
 
  .catagories p {
@@ -331,7 +324,9 @@ img {
 	margin:0;
     text-transform: uppercase;
     color: white;
-    font-family: "Raleway Light" ;
+    font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
     text-shadow: 1px 1px 2px black;
     
     }
@@ -346,8 +341,8 @@ text-align:center;
 }
 .mostLoved {
  
-    height: 400px;
-    margin-bottom:10rem;
+    height: 430px;
+    margin-bottom:12rem;
 }
 
 .ctypes {
@@ -356,6 +351,9 @@ text-align:center;
     font-weight: 900;
     color: #969696;
     padding-top:20px;
+    font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
     
 }
 
@@ -364,11 +362,14 @@ text-align:center;
     color: #969696;
     font-weight: 900;
     padding-bottom: 40px;
+    font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 .cnames {
-    font-family: "Playfair Display Regular";
+    font-family: "Playfair Display Regular", "Garamond";
     color: #e2574c;
     font-size:24px;
     padding: 10px;
@@ -385,19 +386,21 @@ text-align:center;
   
 .signup {
     background-image: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
-    url(project-01a/assets/images/wave-bkgd.jpg);
+    url(wave-bkgd.jpg);
     background-repeat: no-repeat;
     position: relative;
     height: 325px;
-    width: 100%;
-    background-position-y:0, -540px;
+    background-image:center;
+    background-position: bottom;
    
 
 }
 
 .signup p {
-  padding-top: 30px;
-  text-align:center;
+    align-self: center;
+   
+    padding-bottom: 1rem;
+    max-width: 600px;
 
 }
 
@@ -415,16 +418,21 @@ text-align:center;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    font-family: "Raleway Medium", "Garamond";
+    font-weight: normal;
+    font-style: normal;
 }
 
 .emailform {
-    background: white;
-    width: 475px;
+    background: white; 
     margin: 0 auto;
     height: 45px;
     border-radius: 50px;
     position: relative;
     max-width:400px;
+    padding: .5rem 1.75rem;
+    padding-right: 150px;
+    width: 100%;
 }
 
 input {
@@ -434,7 +442,7 @@ input {
     border: none;
     resize: none;
     padding-right: 90px;
-    font-family: "Raleway Light";
+    font-family: "Raleway Light", "Garamond";
     font-size: 14px;
     padding-top: 12px;
     width: 350px;
@@ -450,9 +458,10 @@ input {
     height: 30px;
     border: none;
     resize: none;
-    font-family: "Raleway Light";
+    font-family: "Raleway Light", "Garamond";
     margin: 0 auto;
     color: #969696;
+    outline:none;
    
 }
 
@@ -461,7 +470,7 @@ button{
     position: absolute;
     bottom: 3px;
     font-size: 14px;
-    font-family: "Raleway Light";
+    font-family: "Raleway Light", "Garamond";
     color: white;
     border-radius: 50px;
     height: 40px;
@@ -469,6 +478,7 @@ button{
     width: 120px;
     right: 3px;
     background-color: #e2574c;
+    outline:none;
 }
 
 /*------------------footer-----------------------*/
@@ -490,7 +500,8 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     padding-top: 50px;
-    font-family: "Playfair Display Regular"
+    margin: 0 auto;
+    font-family: "Playfair Display Regular", "Garamond";
 
 }
 
@@ -531,4 +542,7 @@ h3 {
 
     }
 
+.carousel {
+    color: white;
+}
     
