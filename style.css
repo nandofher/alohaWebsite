@@ -124,8 +124,9 @@ header {
 
 .cart {
   
-    height: auto;
+    height: 75px;
     max-width: 16%;
+    align-self:center;
     margin: 10%;
     flex: 0 1 50%;
 
@@ -134,7 +135,7 @@ header {
 .logo {
     
     max-width: 120px;
-    height: auto;
+    height: 250px;
     margin: 1%;
     flex: 0 1 50%;
 }
@@ -147,7 +148,15 @@ header {
     width:100%;
 }
 
-
+.screenReader::focus {
+    clip: auto !important;
+    z-index: 100000; /* above all content */
+    display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+}
 
 
 /* hero banner----------------------------------------*/
@@ -158,8 +167,8 @@ header {
 
 .heroBanner {
     background: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
-                url(banner-girl.png) no-repeat center center, 
-                url(flower-bkgd.jpg);             
+                url(banner-girl-compressor.png) no-repeat center center, 
+                url(flower-bkgd-compressor.jpg);             
     background-size: contain, contain, cover;
     
     height: 550px; 
@@ -256,8 +265,8 @@ img {
                  url(mens-category.jpg) no-repeat center center;
     background-size: cover, cover;
      max-width: 100%;
-     flex: 2 0 100%;
-     border: 5px solid white;
+     flex: 1 1 100%;
+     /*border-bottom: 3px solid white;*/
     margin:2px;
     display: inherit;
 }
@@ -265,9 +274,11 @@ img {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
                         url(trends-category.jpg)no-repeat center center;
      background-size: cover, cover;
-     border: 5px solid white;
+     /*border: 3px solid white;*/
      max-width:50%;
-     flex: 1 0 50%;
+     flex: 1 1 48%;
+     margin: 2px;
+     border-left:0;
     display: inherit;
 } 
 
@@ -276,9 +287,11 @@ img {
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
                         url(glasses-category.jpg)no-repeat center center;
      background-size: cover, cover;
-     border: 5px solid white;
+     /*border: 3px solid white;*/
      max-width:50%;
-     flex: 1 0 50%;
+     margin: 2px;
+     flex: 1 0 48%;
+     border-right: 0;
     display: inherit;
 
 
@@ -287,9 +300,11 @@ img {
       background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
                         url(sale-category.jpg)no-repeat center center;
      background-size: cover, cover;
-     border: 5px solid white;
+     /*border: 3px solid white;*/
      max-width:50%;
-     flex: 1 0 50%;
+     margin: 2px;
+     flex: 1 0 48%;
+     border-left:0;
      display: inherit;
 }
 
@@ -297,9 +312,11 @@ img {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
                         url(bags-category.jpg)no-repeat center center;
      background-size: cover, cover;
-     border: 5px solid white;
+     /*border: 3px solid white;*/
      max-width:50%;
-     flex: 1 0 50%;
+     flex: 1 0 48%;
+     border-right: 0;
+     margin: 2px;
      display: inherit;
 }
 
@@ -307,7 +324,7 @@ img {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
                  url(womens-category.jpg) no-repeat center center;
     background-size: cover, cover;
-    border: 5px solid white;
+    /*border-bottom: 3px solid white;*/
      max-width: 100%;
      flex: 2 0 100%;
     margin:2px;
@@ -336,9 +353,13 @@ img {
 
 /* Second section list items----------------------------------*/
 .main-carousel {
-width:1000px;
+    margin: 0 auto;
+
+/*max-width:600px;*/
 text-align:center;
 }
+
+
 .mostLoved {
  
     height: 430px;
@@ -375,12 +396,16 @@ text-align:center;
     padding: 10px;
 }
 
-.listitems div {
+.main-carousel {
     
-    width:100%;
+    /*width:100%;*/
     text-align: center;
     margin-bottom: 10px;
 }
+.carousel-cell{
+    width: 100%;
+}
+
 
 /*------------------------signup -----------------------------*/
   
@@ -426,18 +451,18 @@ text-align:center;
 .emailform {
     background: white; 
     margin: 0 auto;
-    height: 45px;
+    height: 35px;
     border-radius: 50px;
     position: relative;
-    max-width:400px;
     padding: .5rem 1.75rem;
     padding-right: 150px;
-    width: 100%;
+    width: 40%;
 }
 
 input {
     border-radius: 30px;
     margin-left: 120px;
+    width: 40%;
     height: 30px;
     border: none;
     resize: none;
@@ -445,7 +470,6 @@ input {
     font-family: "Raleway Light", "Garamond";
     font-size: 14px;
     padding-top: 12px;
-    width: 350px;
     color: #969696;
     left: 400px;
 
@@ -455,7 +479,7 @@ input {
 .txt {
     
     border-radius: 30px;
-    height: 30px;
+    height: 10px;
     border: none;
     resize: none;
     font-family: "Raleway Light", "Garamond";
@@ -473,7 +497,7 @@ button{
     font-family: "Raleway Light", "Garamond";
     color: white;
     border-radius: 50px;
-    height: 40px;
+    height: 45px;
     border: 0;
     width: 120px;
     right: 3px;
@@ -546,3 +570,4 @@ h3 {
     color: white;
 }
     
+  

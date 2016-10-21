@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="responsive.css" media="all and (min-width: 600px)">
-        <link rel="stylesheet" href="flickity-docs.css" media="screen">
+        <!--<link rel="stylesheet" href="flickity-docs.css" media="screen">-->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
     
 
         <title>Aloha Website</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     </head>
         <body> 
-           
+            
                 <header class="container">
                  
                         <img class="logo" src="aloha-logo.svg" alt="aloha logo">
@@ -38,13 +39,18 @@
                         <h1 class="spring"> Spring/Summer 2016</h1>
                     </div>
                 </section>
+               
 
+                <main id="main" class="site-main" tabindex="-1">
                 <section id="about" class="handcraft">
                     <div>
                        <h1><span class="heavy">Hand-Crafted</span> Styles</h1>
                         <p class="firstpara">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br> current selection of products or sign-up for updates below.</p>
                     </div>
+                    
                 </section>
+                </main>
+
                 <section id="shop" class="boxitems">
                     <div class="catagories">
                         <div class="mens"><p>men's</p></div>
@@ -63,56 +69,56 @@
                        <div class="listitems">
                         
                         
-                        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+                        <div class="main-carousel">
  
-                            <div class="carousel_cell">
-                                <img src="stretch-knit-dress.jpg" alt="knit dress">
+                            <div class="carousel-cell">
+                                <img src="stretch-knit-dress-compressor.jpg" alt="knit dress">
                                 <p class="ctypes">DRESSES</p>
                                 <p class="cnames">Stretch Knit Dress</p>
                                 <p class="cprice">$169.00</p>
                             </div>
-                            <div class="carousel_cell">
-                                <img src="cotton-blue-shirt.jpg" alt="blue shirt">
+                            <div class="carousel-cell">
+                                <img src="cotton-blue-shirt-compressor.jpg" alt="blue shirt">
                                 <p class="ctypes">SHIRTS</p>
                                 <p class="cnames"> Cotton Blue Shirt</p>
                                 <p class="cprice">$89.00</p>
                             </div>
-                            <div class="carousel_cell">
-                                <img src="checked-stretch-dress.jpg" alt="stretched dress" >
+                            <div class="carousel-cell">
+                                <img src="checked-stretch-dress-compressor.jpg" alt="stretched dress" >
                                 <p class="ctypes">DRESSES</p>
                                 <p class="cnames"> Checkered Stretch Dress</p>
                                 <p class="cprice">$129.00</p>
                             </div>
-                            <div class="carousel_cell">
-                                <img src="blue-hipster-backpack.jpg" alt="backpack">
+                            <div class="carousel-cell">
+                                <img src="blue-hipster-backpack-compressor.jpg" alt="backpack">
                                 <p class="ctypes">BAGS</p>
                                 <p class="cnames"> Blue Hipster Backpack</p>
                                 <p class="cprice">$69.00</p>
                             
                             </div>
-                             <div class="carousel_cell">
-                                <img src="blue-silk-dress.jpg" alt="silk dress" >
+                             <div class="carousel-cell">
+                                <img src="blue-silk-dress-compressor.jpg" alt="silk dress" >
                                 <p class="ctypes">dresses</p>
                                 <p class="cnames"> Blue Silk Dress</p>
                                 <p class="cprice">$89.00</p>
                             
                             </div>
-                             <div class="carousel_cell">
-                                <img src="cotton-yellow-tshirt.jpg" alt="yellow t-shrt">
+                             <div class="carousel-cell">
+                                <img src="cotton-yellow-tshirt-compressor.jpg" alt="yellow t-shrt">
                                 <p class="ctypes">t-shirts</p>
                                 <p class="cnames"> Cotton Yellow T-shirt</p>
                                 <p class="cprice">$69.00</p>
                             
                             </div>
-                             <div class="carousel_cell">
-                                <img src="pink-dotted-dress.jpg" alt="pink dress" >
+                             <div class="carousel-cell">
+                                <img src="pink-dotted-dress-compressor.jpg" alt="pink dress" >
                                 <p class="ctypes">Dresses</p>
                                 <p class="cnames"> Pink Dotted Dress</p>
                                 <p class="cprice">$99.00</p>
                             
                             </div>
-                             <div class="carousel_cell">
-                                <img src="demin-overall-shorts.jpg" alt="overalls">
+                             <div class="carousel-cell">
+                                <img src="demin-overall-shorts-compressor.jpg" alt="overalls">
                                 <p class="ctypes">Demin</p>
                                 <p class="cnames"> Demin Overall Shorts</p>
                                 <p class="cprice">$89.00</p>
@@ -160,12 +166,13 @@
               </div>
             </footer>
             
-        <script src="js/jquery-3.1.1.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/flickity-docs.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <!--<script src="js/flickity-docs.min.js"></script>-->
+        <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
         <script src="js/smoothScroll.js"></script>
-
+       
+        <script src="js/main.js"></script>
     </body>
 </html>
 

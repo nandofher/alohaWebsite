@@ -1,33 +1,39 @@
-$( document ).ready(function() {
-
-   $('a').smoothScroll();
-
-});
-
+$(document).ready(function () {
 
 $(function() {
-		$('div').on('click', '.subscribe', function(event) {
-			event.preventDefault();
-			
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
-			if ($('#txt').val().length == 0 ) {
+//alert popup----------------------------------------------------
+	$(function () {
+		$('.signup').on('click', '.subscribe', function (event) {
+			event.preventDefault();
+
+
+			if ($('#txt').val().length == 0) {
 				alert('Please fill in a valid e-mail');
-			
-			}else {
+
+			} else {
 				alert('Thank you for subscribing!');
 			}
 		});
+	});
+// flickity carousel------------------------------
 
-  }(jQuery));
-  
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  
+$('.main-carousel').flickity({
+  // options
   cellAlign: 'left',
   contain: true
 });
-
-var flkty = new Flickity( '.main-carousel', {
- 
-});
-
+}(jQuery));
