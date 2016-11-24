@@ -1,5 +1,5 @@
 # alohaWebsitePt2
-
+![ALT text] (alohascreenshot.png)
 ## Summary
 
  Second part of the first project for RED Academy. This webpage uses HTML, CSS and jQuery to recreate a web design for Aloha Apparel.
