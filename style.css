@@ -98,8 +98,11 @@ header {
     font-family: "Raleway Medium", "Garamond";
     font-weight: normal;
     font-style: normal;
-    text-decoration: none;
     
+    }
+
+    .navmenu a {
+        text-decoration:none;
     }
 
 .aboutnav {
@@ -258,6 +261,7 @@ img {
     flex-wrap: wrap;
     min-height: 900px;
     margin-bottom: 1rem;
+    justify-content:center;
 
 }
 .mens { 
@@ -483,7 +487,7 @@ input {
     border: none;
     resize: none;
     font-family: "Raleway Light", "Garamond";
-    margin: 0 auto;
+    margin: 0 36% 0 0;
     color: #969696;
     outline:none;
    
