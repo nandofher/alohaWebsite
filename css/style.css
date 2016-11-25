@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Raleway Light";
-    src: url('fonts/raleway-light-webfont.eot');
-    src: url('fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-light-webfont.woff2') format('woff2'), 
-         url('fonts/raleway-light-webfont.ttf') format('truetype'),
-         url('fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'), 
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
     font-weight: normal;
     font-style: normal;        
 }
@@ -12,47 +12,43 @@
 
 @font-face {
     font-family: "Raleway Medium";
-    src: url('fonts/raleway-medium-webfont.eot');
-    src: url('fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-medium-webfont.woff2') format('woff2'),
-         url('fonts/raleway-medium-webfont.ttf') format('truetype'),
-         url('fonts/raleway-medium-webfont.svg') format('svg');
+    src: url('../fonts/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;        
 }
 
 @font-face {
     font-family: "Playfair Display Italic";
-    src: url("fonts/playfairdisplay-italic-webfont.eot");
-    src: url("fonts/playfairdisplay-italic-webfont.eot?#iefix") format('embedded-opentype'),
-         url("fonts/playfairdisplay-italic-webfont.woff2") format('woff2'),
-         url("fonts/playfairdisplay-italic-webfont.ttf") format('truetype'),
-         url("fonts/playfairdisplay-italic-webfont.svg") format('svg');
+    src: url("../fonts/playfairdisplay-italic-webfont.eot");
+    src: url("../fonts/playfairdisplay-italic-webfont.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/playfairdisplay-italic-webfont.woff2") format('woff2'),
+         url("../fonts/playfairdisplay-italic-webfont.ttf") format('truetype'),
+         url("../fonts/playfairdisplay-italic-webfont.svg") format('svg');
           font-style:italic;
           font-weight:normal;
 
 }
 @font-face {
     font-family: "Playfair Display Regular";
-    src: url("fonts/playfairdisplay-regular-webfont.eot");
-    src: url("fonts/playfairdisplay-regular-webfont.eot?#iefix") format('embedded-opentype'),
-         url("fonts/playfairdisplay-regular-webfont.woff2") format('woff2'),
-         url("fonts/playfairdisplay-regular-webfont.ttf") format('truetype'),
-         url("fonts/playfairdisplay-regular-webfont.svg")  format('svg');
+    src: url("../fonts/playfairdisplay-regular-webfont.eot");
+    src: url("../fonts/playfairdisplay-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/playfairdisplay-regular-webfont.woff2") format('woff2'),
+         url("../fonts/playfairdisplay-regular-webfont.ttf") format('truetype'),
+         url("../fonts/playfairdisplay-regular-webfont.svg")  format('svg');
          font-style:normal;
          font-weight:normal;
-
 }
 
 body, html {
     font-size: 16px;
     font-family:"Raleway Light", "Garamond";
-    
-
 }
 
 .container {
-    /*max-width:480;*/
     width: 100%;
     margin:0 auto;
     display: flex;
@@ -62,7 +58,6 @@ body, html {
 
 }
 /* header-------------------------------------------*/
-
 header {
     background-color: white;
     margin: 0 1.5%;
@@ -151,29 +146,13 @@ header {
     width:100%;
 }
 
-.screenReader::focus {
-    clip: auto !important;
-    z-index: 100000; /* above all content */
-    display: block;
-   height: auto;
-   left: 5px;
-   top: 5px;
-   width: auto;
-}
-
 
 /* hero banner----------------------------------------*/
-
-
-    
-
-
 .heroBanner {
     background: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
-                url(banner-girl-compressor.png) no-repeat center center, 
-                url(flower-bkgd-compressor.jpg);             
+                url(../images/banner-girl-compressor.png) no-repeat center center, 
+                url(../images/flower-bkgd-compressor.jpg);             
     background-size: contain, contain, cover;
-    
     height: 550px; 
     position: relative;
       
@@ -188,7 +167,6 @@ header {
 }
 
 .spring {
- 
     font-size: 3rem;
     color: white; 
     text-align: center;
@@ -256,7 +234,6 @@ img {
     justify-content: center;
 }
 .catagories {
-
 	display: flex;
     flex-wrap: wrap;
     min-height: 900px;
@@ -266,19 +243,17 @@ img {
 }
 .mens { 
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                 url(mens-category.jpg) no-repeat center center;
+                 url(../images/mens-category.jpg) no-repeat center center;
     background-size: cover, cover;
      max-width: 100%;
      flex: 1 1 100%;
-     /*border-bottom: 3px solid white;*/
     margin:2px;
     display: inherit;
 }
 .trends {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(trends-category.jpg)no-repeat center center;
+                        url(../images/trends-category.jpg)no-repeat center center;
      background-size: cover, cover;
-     /*border: 3px solid white;*/
      max-width:50%;
      flex: 1 1 48%;
      margin: 2px;
@@ -289,20 +264,18 @@ img {
 .glasses {
 
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(glasses-category.jpg)no-repeat center center;
+                        url(../images/glasses-category.jpg)no-repeat center center;
      background-size: cover, cover;
-     /*border: 3px solid white;*/
      max-width:50%;
      margin: 2px;
      flex: 1 0 48%;
      border-right: 0;
     display: inherit;
-
-
     }
+
 .sale {
       background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(sale-category.jpg)no-repeat center center;
+                        url(../images/sale-category.jpg)no-repeat center center;
      background-size: cover, cover;
      /*border: 3px solid white;*/
      max-width:50%;
@@ -314,7 +287,7 @@ img {
 
 .bags {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                        url(bags-category.jpg)no-repeat center center;
+                        url(../images/bags-category.jpg)no-repeat center center;
      background-size: cover, cover;
      /*border: 3px solid white;*/
      max-width:50%;
@@ -326,7 +299,7 @@ img {
 
 .womens {
      background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-                 url(womens-category.jpg) no-repeat center center;
+                 url(../images/womens-category.jpg) no-repeat center center;
     background-size: cover, cover;
     /*border-bottom: 3px solid white;*/
      max-width: 100%;
@@ -350,7 +323,7 @@ img {
     font-style: normal;
     text-shadow: 1px 1px 2px black;
     
-    }
+}
 
 
 
@@ -358,9 +331,7 @@ img {
 /* Second section list items----------------------------------*/
 .main-carousel {
     margin: 0 auto;
-
-/*max-width:600px;*/
-text-align:center;
+    text-align:center;
 }
 
 
@@ -379,7 +350,6 @@ text-align:center;
     font-family: "Raleway Medium", "Garamond";
     font-weight: normal;
     font-style: normal;
-    
 }
 
 .cprice {
@@ -390,7 +360,6 @@ text-align:center;
     font-family: "Raleway Medium", "Garamond";
     font-weight: normal;
     font-style: normal;
-
 }
 
 .cnames {
@@ -401,8 +370,6 @@ text-align:center;
 }
 
 .main-carousel {
-    
-    /*width:100%;*/
     text-align: center;
     margin-bottom: 10px;
 }
@@ -415,22 +382,18 @@ text-align:center;
   
 .signup {
     background-image: linear-gradient(to bottom, rgba(0,0, 0, 0.4) 0%, rgba(0,0,0,0.2) 100%),
-    url(wave-bkgd.jpg);
+    url(../images/wave-bkgd.jpg);
     background-repeat: no-repeat;
     position: relative;
     height: 325px;
     background-image:center;
     background-position: bottom;
-   
-
 }
 
 .signup p {
     align-self: center;
-   
     padding-bottom: 1rem;
     max-width: 600px;
-
 }
 
 .signupblock {
@@ -476,21 +439,19 @@ input {
     padding-top: 12px;
     color: #969696;
     left: 400px;
-
-
 } 
 
 .txt {
     
     border-radius: 30px;
-    height: 10px;
+    height: 15px;
+    padding-left: 2%;
     border: none;
     resize: none;
     font-family: "Raleway Light", "Garamond";
     margin: 0 36% 0 0;
     color: #969696;
-    outline:none;
-   
+    outline:none; 
 }
 
 button{
@@ -518,8 +479,6 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align:center;
-
-
 }
 
 
@@ -530,7 +489,6 @@ footer {
     padding-top: 50px;
     margin: 0 auto;
     font-family: "Playfair Display Regular", "Garamond";
-
 }
 
 .emailad {
@@ -550,8 +508,6 @@ footer {
     line-height: 250%;
     padding-top: 10px;
     color: white;
-
-
 }
 
 h3 {
@@ -566,8 +522,6 @@ h3 {
 
 .social a:hover {
     color:#b64036;
-
-
     }
 
 .carousel {
@@ -575,3 +529,232 @@ h3 {
 }
     
   
+/*MEDIA QUERIES=============================*/
+
+@media screen and (min-width: 600px) {
+    body {
+    background-color: white; 
+    }
+
+ .container {
+        flex-wrap:nowrap;
+    }
+
+ .cart {
+     padding-left:20px;
+     order: 1;
+     height:3rem;
+     margin: 0;
+     align-self:center;
+ }
+
+ .logo {
+     align-self:center;
+ }
+
+ .counter {
+    position: absolute;
+    top: 41%;
+    right: 9%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    background-color: #e2574c;
+    color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+ }
+ .navmenu{
+     border:none;
+     align-items:center;
+     padding:1rem;
+     max-width:25rem;
+ }
+ 
+
+/*---------------box items--------------------------------*/
+
+.boxitems{
+    display:initial;
+}
+.catagories {
+	display: flex;
+    flex-flow: row wrap;
+    min-height:500px;
+    margin-bottom: 1rem;
+}
+
+.mens {
+    flex: 0 2 48.3%;
+}
+
+.trends {
+    flex: 0 1 24%;
+
+}
+
+.glasses {
+    flex: 0 1 24%;
+}
+
+.sale {
+    flex: 0 1 24%;
+}
+
+.bags {
+    flex: 0 1 24%;
+
+}
+
+.womens {
+
+    flex: 0 2 48.5%;
+}
+
+ .catagories p {
+    font-size: 2rem;
+
+}
+/*------------------------list items----------------------*/
+.listitems {
+
+    
+    width: 100%;
+}
+
+.listitems div {
+    max-width: 1240px;
+}
+
+.carousel-cell{
+    width:50%; 
+}
+
+.flickity-slider {
+    width:100%;
+}
+
+.flickity-viewport {
+    max-width:1240px;
+}
+
+
+/*----------------------sign up form------------------------------------*/
+
+
+h3 {
+    display:inline;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: 'Raleway Light';
+    margin-right: 6rem;
+    margin-top: 2rem;
+}
+
+.address {
+    text-align:left;
+    margin-left:6rem;
+}
+
+/*------------------------------------------------------------------*/
+@media screen and (min-width: 1240px) {
+   body {
+      background-color: white;
+   }
+
+body, html {
+    font-size: 16px;
+    font-family:"Raleway Light";
+}
+
+.container {
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 200 200%;
+
+}
+/* header-------------------------------------------*/
+
+header {
+    background-color: white;
+    margin: 0 1.5%;
+    width: 15%;
+    display:flex;
+    max-width: 1280px;
+    flex-wrap: nowrap;
+}
+
+.navmenu {
+    display:flex;
+    flex: auto;
+    justify-content:space-between;  
+}
+
+.navmenu p {
+    width:100%; 
+	text-align:center; 
+    justify-content: center;
+	align-self: center;  
+	margin:0;
+    text-transform: uppercase;
+    color:#e2574c;
+    
+    text-decoration:none;
+    }
+
+.aboutnav {
+    display: inherit;
+   
+}
+
+.shopnav {
+    display: inherit;
+
+}
+
+.featurednav {
+    display:inherit;
+
+}
+
+.updatesnav {
+    display:inherit;
+
+}
+
+.cart {
+  
+    height: auto;
+    width: 85px;
+    margin: 1%;
+    padding-right:15px;
+   
+    flex: 0 0 50px;
+}
+
+.logo {
+    
+   
+    width: 120px;
+    
+    margin: 1%;
+    padding-left: 15px;
+ 
+}
+
+.carousel-cell {
+    width: 25%;
+}
+
+
+
+    
+

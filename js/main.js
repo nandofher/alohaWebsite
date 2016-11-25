@@ -21,7 +21,7 @@ $(function() {
 			event.preventDefault();
 
 
-			if ($('#txt').val().length == 0) {
+			if ($('#txt').val().length <= 10) {
 				alert('Please fill in a valid e-mail');
 
 			} else {
@@ -37,3 +37,20 @@ $('.main-carousel').flickity({
   contain: true
 });
 }(jQuery));
+
+// shopping cart item increment
+
+    var inc = 0;
+    $('.counter').hide();
+    $('#btn').on('click', function(event) {
+        inc++;
+        console.log(inc);
+
+        if (inc === 0 ) {
+            $('.counter').hide();
+        } else {
+            $('.counter').show();
+            $('.counter').text(inc);
+        }
+
+    });
