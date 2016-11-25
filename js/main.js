@@ -42,15 +42,14 @@ $('.main-carousel').flickity({
 
     var inc = 0;
     $('.counter').hide();
-    $('#btn').on('click', function(event) {
+    $('.btn').on('click', function(event) {
         inc++;
-        console.log(inc);
+   console.log(inc);
 
-        if (inc === 0 ) {
+  if (inc === 0 ) {
             $('.counter').hide();
-        } else {
-            $('.counter').show();
-            $('.counter').text(inc);
-        }
-
+    } else {
+    $('.counter').show();
+    $('.counter').text(inc++);
+      }
     });

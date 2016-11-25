@@ -68,6 +68,7 @@ header {
     display:flex;
     max-width: 1240px;
     flex-wrap: wrap;
+    z-index: 1000;
    
 }
 
@@ -341,6 +342,10 @@ img {
     
 }
 
+.catagories p:hover {
+    color:wheat;
+}
+
 
 
 
@@ -385,6 +390,12 @@ img {
     padding: 10px;
 }
 
+.btn {
+    position:relative;
+    height:27px;
+    bottom: 27px;
+}
+
 .main-carousel {
     text-align: center;
     margin-bottom: 10px;
@@ -393,6 +404,10 @@ img {
     width: 100%;
 }
 
+.flickity-viewport {
+   height:500px;
+       
+}
 
 /*------------------------signup -----------------------------*/
   
@@ -620,8 +635,6 @@ h3 {
 }
 /*------------------------list items----------------------*/
 .listitems {
-
-    
     width: 100%;
 }
 
@@ -691,6 +704,10 @@ header {
     display:flex;
     max-width: 1280px;
     flex-wrap: nowrap;
+}
+.counter {
+    top: 18%;
+    right: 7%;
 }
 
 .navmenu {
