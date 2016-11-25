@@ -55,6 +55,7 @@ body, html {
     flex-wrap: wrap;
     justify-content:space-between;
     flex: 0 200 200%;
+    top: 0;
 
 }
 /* header-------------------------------------------*/
@@ -62,6 +63,8 @@ header {
     background-color: white;
     margin: 0 1.5%;
     width: 15%;
+    position:fixed;
+    height: 110px;
     display:flex;
     max-width: 1240px;
     flex-wrap: wrap;
@@ -121,11 +124,10 @@ header {
 }
 
 .cart {
-  
-    height: 75px;
+    height: 45px;
     max-width: 16%;
-    align-self:center;
-    margin: 10%;
+    align-self: center;
+    margin: 1% 4% 6% 32%;
     flex: 0 1 50%;
 
 }
@@ -133,11 +135,25 @@ header {
 .logo {
     
     max-width: 120px;
-    height: 250px;
-    margin: 1%;
+    height: 35px;
+    margin: 2% 0 0 -9px;
     flex: 0 1 50%;
 }
 
+ .counter {
+    position: absolute;
+    top: 26%;
+    right: 5%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    background-color: #e2574c;
+    color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+ }
 
 .space {
     display:flex;
@@ -153,16 +169,16 @@ header {
                 url(../images/banner-girl-compressor.png) no-repeat center center, 
                 url(../images/flower-bkgd-compressor.jpg);             
     background-size: contain, contain, cover;
-    height: 550px; 
-    position: relative;
-      
+    height: 555px;
+    background-position-y: 109px;  
 }
 
 .heroBanner div {
-   top: 50%;
-   width: 100%;
-   position:absolute;
-   transform: translate(0%,-50%);
+    display: flex;
+    flex-direction: column;
+    height: 96%;
+    justify-content: center;
+    width: 100%;
 
 }
 
@@ -551,28 +567,13 @@ h3 {
  .logo {
      align-self:center;
  }
-
- .counter {
-    position: absolute;
-    top: 41%;
-    right: 9%;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    display: flex;
-    background-color: #e2574c;
-    color: white;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
- }
  .navmenu{
      border:none;
      align-items:center;
      padding:1rem;
      max-width:25rem;
  }
- 
+
 
 /*---------------box items--------------------------------*/
 
